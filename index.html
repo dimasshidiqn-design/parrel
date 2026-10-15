@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposal Karang Taruna Sumberduren</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo KT Sumberduren">
+    <h1>KARANG TARUNA SUMBERDUREN</h1>
+    <p>Desa Sumberduren | Proposal Kegiatan & Dokumentasi</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Latar Belakang</h2>
+      <p>Karang Taruna Sumberduren dibentuk sebagai wadah pengembangan generasi muda yang kreatif, mandiri, dan peduli terhadap kemajuan desa.</p>
+      
+    <h2>Visi & Misi</h2>
+      <p><b>Visi:</b> Menjadi pemuda yang berkarakter, berdaya saing, dan berlandaskan keadilan</p>
+      
+      <p><b>Misi:</b></p>
+      <ol>
+        <i> ["Mewujudkan pemuda Sumberduren yang berakhlak, kreatif, dan peduli lingkungan",
+  "Meningkatkan partisipasi pemuda dalam kegiatan sosial, olahraga, dan budaya desa",
+  "Menjadi wadah pengembangan potensi pemuda di bidang kewirausahaan dan teknologi",
+  "Mewujudkan desa Sumberduren yang bersih, aman, guyub, dan berprestasi"]
+      <h2>Susunan Pengurus 2026</h2>
+      <p>Ketua: [zaki rajendra farrel azacary] <br> Sekretaris: [zahra paimen] <br> Bendahara: [Keysha Dwi Zahrotus Sita] </br> Penanggung jawab: [Nur Khafabi] </p>
+    </div>
+          <!-- TUJUAN LOMBA -->
+<section style="padding:0 20px; margin-top:10px;">
+  <div style="background:white; border:1px solid #ddd; border-radius:12px; padding:16px;">
+    <h3 style="font-weight:bold; font-size:16px; margin-bottom:10px;">🎯 Tujuan Lomba</h3>
+    <ol style="padding-left:20px; font-size:14px; line-height:1.7;">
+      <li>Memeriahkan HUT RI ke-81 dengan kegiatan positif dan edukatif.</li>
+      <li>Meningkatkan rasa persatuan, gotong royong, dan sportivitas warga Desa Sumberduren.</li>
+      <li>Mengembangkan kreativitas dan kecerdasan anak-anak melalui lomba bertema fun game 17 agustus.</li>
+      <li>Menjadi wadah silaturahmi antar warga dan generasi muda.</li>
+      <li>Memanfaatkan kas pemuda secara transparan (Total Masuk Rp 2.270.000 / Keluar Rp 2.052.500).</li>
+    </ol>
+  </div>
+</section>
+
+          <!-- TAMBAHIN TEMA DI ATAS GALERI -->
+<section style="padding:20px;">
+  <h1 style="font-size:22px; font-weight:bold;">Laporan Kegiatan Lomba 17 Agustus 2026</h1>
+  <div style="background:#f0f9ff; border:1px solid #bae6fd; padding:12px 16px; border-radius:10px; margin:12px 0;">
+    <b>Tema:</b> Lomba fun game - Semangat, kompak, dan Sportif<br>
+    <b>Pelaksana:</b> Panitia Lomba Agustus Desa sumberduren <br>
+    <b>tanggal:</b> 17 Agustus 2026 <br>
+    <b>Waktu:</b> (06.00 ) <br>
+  </div>
+
+  <h2 style="margin-top:20px; font-weight:bold;">Galeri Kegiatan</h2>
+  <!-- slider video / foto kamu yang lama taruh di sini -->
+</section>
+
+          <section id="kegiatan" style="padding:20px;">
+  <h2 style="font-weight:bold; font-size:18px; margin-bottom:12px;">📋 Tabel Kegiatan Lomba 2026</h2>
+  <div style="background:white; border:1px solid #ddd; border-radius:12px; overflow:hidden; overflow-x:auto;">
+    <table style="width:100%; border-collapse:collapse; font-size:13px;">
+      <thead style="background:#f5f5f5;">
+        <tr>
+          <th style="padding:10px; text-align:left;">No</th>
+          <th style="padding:10px; text-align:left;">Jenis Lomba</th>
+          <th style="padding:10px; text-align:center;">Kategori</th>
+          <th style="padding:10px; text-align:center;">Sistem</th>
+          <th style="padding:10px; text-align:left;">Juara</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-kegiatan"></tbody>
+    </table>
+  </div>
+</section>
+
+<script>
+const lombaKegiatan = [
+  { nama: "Makan kerupuk", kategori: "Individu" },
+  { nama: "Estafet Tepung", kategori: "Individu" },
+  { nama: "Geol Geol", kategori: "Individu" },
+  { nama: "Corong air", kategori: "Individu" },
+  { nama: "Kukk geruu", kategori: "Individu" },
+  { nama: "Spider ball", kategori: "Tim" },
+  { nama: "Lift bola", kategori: "Tim" },
+  { nama: "Caterpillar", kategori: "Tim" },
+  { nama: "Pembalap karung", kategori: "Tim" },
+  { nama: "Tarik Tambang", kategori: "Tim" },
+];
+
+document.getElementById('tbody-kegiatan').innerHTML = lombaKegiatan.map((l, i) => `
+  <tr style="border-top:1px solid #eee;">
+    <td style="padding:8px 10px;">${i+1}</td>
+    <td style="padding:8px 10px; font-weight:500;">${l.nama}</td>
+    <td style="padding:8px 10px; text-align:center;"><span style="padding:3px 8px; border-radius:20px; font-size:11px; background:${l.kategori==='Tim' ? '#dbeafe' : '#dcfce7'};">${l.kategori}</span></td>
+    <td style="padding:8px 10px; text-align:center;">Single Elimination (Gugur)</td>
+    <td style="padding:8px 10px;">Juara 1, 2, 3, Harapan 1, Harapan 2</td>
+  </tr>
+`).join("");
+    </script>
+          <section style="padding:0 20px; margin-top:10px;">
+  <div style="background:#fefce8; border:1px solid #fde68a; border-radius:12px; padding:16px; display:flex; gap:15px; align-items:center;">
+    <div style="font-size:28px;">📍</div>
+    <div style="font-size:14px; line-height:1.6;">
+      <div><b>Tempat Pelaksanaan:</b></div>
+      <div style="font-size:16px; font-weight:bold; color:#b45309;">DI DEPAN MASJID JAMI DARUL MUNJIYAT</div>
+      <div style="margin-top:8px; background:white; display:inline-block; padding:4px 10px; border-radius:20px; border:1px solid #fde68a;">
+        📅 <b>17 Agustus 2026</b> | 🕕 <b>06.00 WIB - Selesai</b>
+      </div>
+    </div>
+  </div>
+      
+          <section style="padding:0 20px; margin-top:10px;">
+  <h2 style="font-weight:bold; font-size:18px; margin-bottom:12px;">👥 Susunan Panitia & Anggota</h2>
+  
+  <!-- SUSUNAN PANITIA INTI -->
+  <div style="background:white; border:1px solid #ddd; border-radius:12px; overflow:hidden; margin-bottom:15px;">
+    <div style="background:#fee2e2; padding:8px 12px; font-weight:bold; font-size:13px;">Pengurus Inti</div>
+    <table style="width:100%; border-collapse:collapse; font-size:13px;">
+      <thead style="background:#f5f5f5;">
+        <tr><th style="padding:8px 10px; text-align:left;">Jabatan</th><th style="padding:8px 10px; text-align:left;">Nama</th></tr>
+      </thead>
+      <tbody>
+        <tr><td style="padding:8px 10px; border-top:1px solid #eee;">Ketua</td><td style="padding:8px 10px; border-top:1px solid #eee; font-weight:bold;">Zaki Rajendra Farrel A.</td></tr>
+        <tr><td style="padding:8px 10px;">Wakil Ketua</td><td style="padding:8px 10px; font-weight:bold;"> Chandra Abiyasa</td></tr>
+        <tr style="background:#fafafa;"><td style="padding:8px 10px; border-top:1px solid #eee;">Bendahara 1</td><td style="padding:8px 10px; border-top:1px solid #eee;">Keysha Dwi Zohrotus S.</td></tr>
+        <tr style="background:#fafafa;"><td style="padding:8px 10px;">Bendahara 2</td><td style="padding:8px 10px;">Alya Zulfa Nur Khulaida</td></tr>
+        <tr><td style="padding:8px 10px; border-top:1px solid #eee;">Sekretaris 1</td><td style="padding:8px 10px; border-top:1px solid #eee;">Pita</td></tr>
+        <tr><td style="padding:8px 10px;">Sekretaris 2</td><td style="padding:8px 10px;">Rohma Dwi Ani</td></tr>
+        <tr style="background:#fafafa;"><td style="padding:8px 10px; border-top:1px solid #eee;">Dokumenter 1</td><td style="padding:8px 10px; border-top:1px solid #eee;">Dimas</td></tr>
+        <tr style="background:#fafafa;"><td style="padding:8px 10px;">Dokumenter 2</td><td style="padding:8px 10px;">Aurel Virga Alinsya</td></tr>
+        <tr><td style="padding:8px 10px; border-top:1px solid #eee;">Humas 1</td><td style="padding:8px 10px; border-top:1px solid #eee;">Rara</td></tr>
+        <tr><td style="padding:8px 10px;">Humas 2</td><td style="padding:8px 10px;">Zainal (Moh. Zainal Arifin)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- DAFTAR ANGGOTA OTOMATIS FILTER -->
+  <div style="background:white; border:1px solid #ddd; border-radius:12px; overflow:hidden;">
+    <div style="background:#fef3c7; padding:8px 12px; font-weight:bold; font-size:13px;">Daftar Anggota Aktif (25 Orang - Diluar Ketua, Bendahara, Sekretaris, Humas)</div>
+    <table style="width:100%; border-collapse:collapse; font-size:13px;">
+      <thead style="background:#f5f5f5;">
+        <tr><th style="padding:8px 10px; text-align:left; width:40px;">No</th><th style="padding:8px 10px; text-align:left;">Nama Lengkap</th></tr>
+      </thead>
+      <tbody id="tbody-anggota"></tbody>
+    </table>
+  </div>
+  <p style="font-size:11px; color:#999; margin-top:6px;">SK: 23/08/2025 | Tempat: DI DEPAN MASJID JAMI DARUL MUNJIYAT | 17 Agt 2026 - 06.00 WIB</p>
+</section>
+
+<script>
+const anggota = [
+  "Aurel Virga Alinsya","Muhammad Ardi Nugroho","Moh. Nor Khafabi","Ana Septiani Aulia Rizki","Eka Ayunda Sulistyaningrum",
+  "Zahra Febriana Insani Putri","M. Bastian","Denis Putri Ristanti","Ririn Novita Sari","Faisol Akbar",
+  "M. Imran Ma'ruf","Imma Laila Nur S.","Elsa Kusumawati","Vica Aprilia","Nayla Salsabila Aprilia",
+  "Najwa Salsabila Aprilia","M. Irfan Maulana","Ahmad Darul Ahya","Allifia Airin Nur Aini","Kirana Maria Dhita",
+  "Ahmad Eriko Fatkhur R.","M. Rozaq Nor Yahya","Candra Abiyasa","Gigih Setiawan","Mohamad Roziq Abdullah"
+];
+document.getElementById('tbody-anggota').innerHTML = anggota.map((nama,i)=>`
+  <tr style="border-top:1px solid #eee;"><td style="padding:8px 10px;">${i+1}</td><td style="padding:8px 10px;">${nama}</td></tr>
+`).join("");
+</script>
+            
+          </section>
+        
+          
+    <div class="card">
+      <h2>Galeri Kegiatan</h2>
+      <div id="galeri">Loading...</div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script> 
+
+          <!-- TABEL LAPORAN KEUANGAN BARU PALING BAWAH -->
+<section id="keuangan" style="padding:20px; margin-top:30px;">
+  <h2 style="font-weight:bold; font-size:18px; margin-bottom:15px;">Laporan Keuangan Lomba Agustus 2026</h2>
+  
+  <div style="overflow-x:auto; background:white; border-radius:12px; border:1px solid #ddd;">
+    <table style="width:100%; border-collapse:collapse; font-size:14px;">
+      <thead style="background:#f5f5f5;">
+        <tr>
+          <th style="padding:10px; border-bottom:1px solid #ddd; text-align:left;">No</th>
+          <th style="padding:10px; border-bottom:1px solid #ddd; text-align:left;">Pengeluaran</th>
+          <th style="padding:10px; border-bottom:1px solid #ddd; text-align:right;">Harga</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="padding:8px 10px;">1</td><td style="padding:8px 10px;">Buku tulis & balon</td><td style="padding:8px 10px; text-align:right;">310.000</td></tr>
+        <tr><td style="padding:8px 10px;">2</td><td style="padding:8px 10px;">Bola plastik</td><td style="padding:8px 10px; text-align:right;">17.000</td></tr>
+        <tr><td style="padding:8px 10px;">3</td><td style="padding:8px 10px;">Hadiah dan perlengkapan lomba </td><td style="padding:8px 10px; text-align:right;">176.500</td></tr>
+        <tr><td style="padding:8px 10px;">4</td><td style="padding:8px 10px;">Mangkok karbon 2 box</td><td style="padding:8px 10px; text-align:right;">80.000</td></tr>
+        <tr><td style="padding:8px 10px;">5</td><td style="padding:8px 10px;">Dandang 2</td><td style="padding:8px 10px; text-align:right;">132.000</td></tr>
+        <tr><td style="padding:8px 10px;">6</td><td style="padding:8px 10px;">Coklat koin</td><td style="padding:8px 10px; text-align:right;">25.000</td></tr>
+        <tr><td style="padding:8px 10px;">7</td><td style="padding:8px 10px;">Jajan (semua)</td><td style="padding:8px 10px; text-align:right;">404.000</td></tr>
+        <tr><td style="padding:8px 10px;">8</td><td style="padding:8px 10px;">Print, id card, double tape, lem</td><td style="padding:8px 10px; text-align:right;">134.000</td></tr>
+        <tr><td style="padding:8px 10px;">9</td><td style="padding:8px 10px;">Kardus </td><td style="padding:8px 10px; text-align:right;">15.000</td></tr>
+        <tr><td style="padding:8px 10px;">10</td><td style="padding:8px 10px;">Print medali</td><td style="padding:8px 10px; text-align:right;">9.000</td></tr>
+        <tr><td style="padding:8px 10px;">11</td><td style="padding:8px 10px;">Spidol kecil</td><td style="padding:8px 10px; text-align:right;">6.000</td></tr>
+        <tr><td style="padding:8px 10px;">12</td><td style="padding:8px 10px;">Isolasi besar</td><td style="padding:8px 10px; text-align:right;">5.000</td></tr>
+        <tr><td style="padding:8px 10px;">13</td><td style="padding:8px 10px;">Kerupuk</td><td style="padding:8px 10px; text-align:right;">50.000</td></tr>
+        <tr><td style="padding:8px 10px;">14</td><td style="padding:8px 10px;">Kertas hadiah</td><td style="padding:8px 10px; text-align:right;">36.000</td></tr>
+        <tr><td style="padding:8px 10px;">15</td><td style="padding:8px 10px;">Minum</td><td style="padding:8px 10px; text-align:right;">40.000</td></tr>
+        <tr><td style="padding:8px 10px;">16</td><td style="padding:8px 10px;">Nasi</td><td style="padding:8px 10px; text-align:right;">280.000</td></tr>
+        <tr><td style="padding:8px 10px;">17</td><td style="padding:8px 10px;">Gorengan</td><td style="padding:8px 10px; text-align:right;">30.000</td></tr>
+        <tr><td style="padding:8px 10px;">18</td><td style="padding:8px 10px;">Bulpen</td><td style="padding:8px 10px; text-align:right;">42.000</td></tr>
+        <tr><td style="padding:8px 10px;">19</td><td style="padding:8px 10px;">Token dll</td><td style="padding:8px 10px; text-align:right;">250.000</td></tr>
+        <tr><td style="padding:8px 10px;">20</td><td style="padding:8px 10px;">Tepung</td><td style="padding:8px 10px; text-align:right;">11.000</td></tr>
+      </tbody>
+      <tfoot style="background:#fffbe6; font-weight:bold;">
+        <tr><td colspan="2" style="padding:10px;">Jumlah Pengeluaran</td><td style="padding:10px; text-align:right;">Rp 2.052.500</td></tr>
+        <tr><td colspan="2" style="padding:10px;">Jumlah Kas</td><td style="padding:10px; text-align:right;">Rp 2.270.000</td></tr>
+        <tr style="color:green;"><td colspan="2" style="padding:10px;">Sisa Kas</td><td style="padding:10px; text-align:right;">Rp 217.500</td></tr>
+      </tfoot>
+    </table>
+  </div>
+
+  
+</section>
+</body>
+</html>
